@@ -1,0 +1,29 @@
+<body>
+  <h5>{{ title }}</h5>
+  <span class="label label-success">
+    <a href="https://www.youtube.com/watch?v=bdiVKM8wWOw&list=PLpzwMkmxJDUyD-UTGQXuevw0YOPgvroPL&index=38">@Output() #37 </a>
+
+  </span>
+  <p> Animals in array = {{animalsParent.length}}</p>
+
+  <div class="container">
+    <div class="">
+      <app-com-child1 [animalsFromParent]="animalsParent"
+                      (emitAnimalProccessed)="receivedProcessedArray($event)"
+                      #referenceChild1>
+      </app-com-child1>
+    </div>
+
+    <div class="">
+      <app-com-child2 [processesFromParrent]="processedFromChild1"
+                      #child2Reference>
+      </app-com-child2>
+    </div>
+
+    <div class="">
+      <app-com-child3 [fromReference]="arrayFromReferencedobject"></app-com-child3>
+    </div>
+
+  </div>
+
+</body>
