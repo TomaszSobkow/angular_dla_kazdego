@@ -9,7 +9,8 @@ export class InteractionChildComponent implements OnInit {
 
   title = "Interaction Child";
   
-  @Input()
+  //used alias insted of  @Input()
+  @Input('receivedTasks')
   tasks: any;
 
   constructor() { }
