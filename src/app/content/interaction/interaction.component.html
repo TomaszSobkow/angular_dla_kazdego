@@ -1,1 +1,17 @@
 <p>{{title}}</p>
+<ol>
+    <li *ngFor="let task of tasksFromChild"> {{ task }}</li>
+</ol>
+
+<div class="container">
+    <div>
+        <app-interaction-child [receivedTasks]="tasksFromParent">
+        </app-interaction-child>
+    </div>
+    <div>
+        <app-interaction-child2 (newTask)="newTask($event)">
+        </app-interaction-child2>
+    </div>
+</div>
+
+

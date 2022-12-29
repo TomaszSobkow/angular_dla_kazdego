@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InteractionComponent implements OnInit {
 
-  title = "Interaction of Components";
+
+  tasksFromChild: string[] = [];
+
+  newTask(taks: string) {
+    this.tasksFromChild.push(taks)
+  }
+
+  title = "interaction.components";
+  tasksFromParent = ["Task","Task","Task","Task"];
+
 
   constructor() { }
 

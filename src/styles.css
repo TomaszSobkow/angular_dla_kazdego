@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 .component {
-    border: 4px double red;
+    border: 4px double rgb(14, 165, 224);
     padding: 1%;
     margin-bottom: 1%;
-    border-radius: 10px;
+    border-radius: 5px;
   
     /*display: flex; justify-content: space-around;*/
   }
