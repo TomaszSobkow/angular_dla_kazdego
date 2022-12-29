@@ -41,6 +41,7 @@ import { Lesson43Component } from './content/lesson43/lesson43.component';
 import { Lesson43ChildComponent } from './content/lesson43/lesson43-child/lesson43-child.component';
 import { NewangularComponent } from './content/newangular/newangular.component';
 import { InteractionComponent } from './content/interaction/interaction.component';
+import { InteractionChildComponent } from './content/interaction/interaction-child/interaction-child.component';
 
 
 
@@ -85,6 +86,7 @@ import { InteractionComponent } from './content/interaction/interaction.componen
     Lesson43ChildComponent,
     NewangularComponent,
     InteractionComponent,
+    InteractionChildComponent,
 
    
   ],
